@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"></meta>
+<link rel="stylesheet" type="text/css" 
+th:href="@{/css/Style.css}" />
+<title>Insert title here</title>
+</head>
+<body>
+<p th:text="${msg}"> Votre Nom Complet</p>
+<h2>List Animal</h2>
+
+<ul th:each ="animal : ${listeAnimals}">
+<li>
+<p>
+ <span th:text="${animal.nom}"></span>
+ <span th:text="${animal.age}"></span>
+</p>
+</li>
+ </ul>
+</body>
+</html>
